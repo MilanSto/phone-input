@@ -2,6 +2,8 @@
 
 A minimal Angular 19 example demonstrating the usage of `ngx-material-intl-tel-input` package.
 
+[![Run in StackBlitz](https://img.shields.io/badge/StackBlitz-Run%20in%20StackBlitz-orange?logo=stackblitz)](https://stackblitz.com/github/MilanSto/phone-input)
+
 ## Features
 
 - Angular 19 with standalone components
@@ -10,7 +12,12 @@ A minimal Angular 19 example demonstrating the usage of `ngx-material-intl-tel-i
 - Reactive forms integration
 - Country selection with search functionality
 
-## Setup
+## Quick Start
+
+### Option 1: Run Online
+Click the "Run in StackBlitz" button above to run this project directly in your browser.
+
+### Option 2: Run Locally
 
 1. Install dependencies:
 ```bash
