@@ -33,7 +33,7 @@ import { NgxMaterialIntlTelInputComponent } from 'ngx-material-intl-tel-input';
           <form [formGroup]="phoneForm" class="example-form">
             <ngx-material-intl-tel-input
               tid="phone"
-              [fieldControl]="proxyControl"
+              
               [iconMakeCall]="false"
               [required]="true"
               [preferredCountries]="preferredCountries"
