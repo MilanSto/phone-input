@@ -1,0 +1,27 @@
+<div class="container">
+  <mat-card class="phone-card">
+    <mat-card-header>
+      <mat-card-title>International Mobile Phone Input Demo</mat-card-title>
+      <mat-card-subtitle>Production-ready component with mobile validation</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form [formGroup]="phoneForm" (ngSubmit)="onSubmit()">
+        <div class="form-field">
+          <app-international-mobile-phone formPropertyName="phoneNumber"></app-international-mobile-phone>
+        </div>
+        
+        <div class="form-actions">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!phoneForm.valid">
+            Submit
+          </button>
+        </div>
+      </form>
+      
+      <div class="submitted-value" *ngIf="submittedValue">
+        <h3>Submitted Value:</h3>
+        <pre>{{ submittedValue | json }}</pre>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div> 

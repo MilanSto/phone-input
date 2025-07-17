@@ -1,0 +1,24 @@
+<div class="phone-input-container">
+  <ngx-material-intl-tel-input
+    [fieldControl]="proxyControl"
+    [preferredCountries]="preferredCountries"
+    [textLabels]="textLabels"
+    [enablePlaceholder]="true"
+    [enableSearch]="true"
+    [autoSelectCountry]="true"
+    [autoIpLookup]="true"
+    [iconMakeCall]="false"
+    [numberValidation]="false"
+    [required]="true"
+  >
+  </ngx-material-intl-tel-input>
+  
+  <div class="error-messages" *ngIf="proxyControl.invalid && proxyControl.touched">
+    <div class="error-message" *ngIf="proxyControl.errors?.['notAMobile']">
+      Please enter a valid mobile number
+    </div>
+    <div class="error-message" *ngIf="proxyControl.errors?.['required']">
+      Mobile number is required
+    </div>
+  </div>
+</div> 
